@@ -2,7 +2,7 @@
 
 {
     'name': 'Sale order line menu & view',
-    'version': '1.0.1.2',
+    'version': '1.0.1.3',
     'author':'Soft-integration',
     'category': 'Sale',
     'description': "",
