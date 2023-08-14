@@ -34,6 +34,17 @@
         </record>
 
 
+        <record id="view_sales_order_line_filter_inherited" model="ir.ui.view">
+            <field name="name">view.order.line.tree.inherited</field>
+            <field name="model">sale.order.line</field>
+            <field name="inherit_id" ref="sale.view_sales_order_line_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='product']" position="after">
+                     <filter string="Type" name="type" domain="[]" context="{'group_by':'type'}"/>
+                </xpath>
+            </field>
+        </record>
+
         <record id="action_order_lines" model="ir.actions.act_window">
             <field name="name">Sales Order lines</field>
             <field name="type">ir.actions.act_window</field>
