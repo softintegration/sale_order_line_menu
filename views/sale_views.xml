@@ -40,7 +40,7 @@
             <field name="inherit_id" ref="sale.view_sales_order_line_filter"/>
             <field name="arch" type="xml">
                 <xpath expr="//filter[@name='product']" position="after">
-                     <filter string="Type" name="type" domain="[]" context="{'group_by':'type'}"/>
+                     <filter string="Type" name="product_type" domain="[]" context="{'group_by':'product_type'}"/>
                 </xpath>
             </field>
         </record>
